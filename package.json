@@ -1,42 +1,43 @@
 {
-  "name": "releaseme",
-  "version": "0.0.1",
-  "description": "A tool inspired by SBT Release for releasing node applications.",
-  "main": "index.js",
-  "bin": {
-    "releaseme": "bin/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ukayani/releaseme.git"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "keywords": [
-    "release",
-    "tagging",
-    "tag",
-    "git",
-    "sbt"
-  ],
-  "author": "ukayani",
-  "license": "ISC",
-  "devDependencies": {
-    "chai": "^3.3.0",
-    "gulp": "^3.9.1",
-    "gulp-eslint": "^2.1.0",
-    "gulp-istanbul": "^0.10.4",
-    "gulp-mocha": "^2.1.3",
-    "gulp-util": "^3.0.6",
-    "mocha": "^2.3.3"
-  },
-  "dependencies": {
-    "any-shell-escape": "^0.1.1",
-    "assert-plus": "^0.1.5",
-    "chalk": "^1.1.3",
-    "commander": "^2.9.0",
-    "mz": "^2.4.0",
-    "shelljs": "^0.7.7"
-  }
+    "name": "releaseme",
+    "version": "1.3.1",
+    "description": "A tool inspired by SBT Release for releasing node applications.",
+    "main": "index.js",
+    "bin": {
+        "releaseme": "bin/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ukayani/releaseme.git"
+    },
+    "scripts": {
+        "test": "echo 'Hello World'"
+    },
+    "keywords": [
+        "release",
+        "tagging",
+        "tag",
+        "git",
+        "sbt"
+    ],
+    "author": "ukayani",
+    "license": "ISC",
+    "devDependencies": {
+        "chai": "^3.3.0",
+        "gulp": "^3.9.1",
+        "gulp-eslint": "^2.1.0",
+        "gulp-istanbul": "^0.10.4",
+        "gulp-mocha": "^2.1.3",
+        "gulp-util": "^3.0.6",
+        "mocha": "^2.3.3"
+    },
+    "dependencies": {
+        "any-shell-escape": "^0.1.1",
+        "assert-plus": "^0.1.5",
+        "chalk": "^1.1.3",
+        "commander": "^2.9.0",
+        "mz": "^2.4.0",
+        "semver": "^5.3.0",
+        "shelljs": "^0.7.7"
+    }
 }
