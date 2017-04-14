@@ -11,7 +11,8 @@
         "url": "https://github.com/ukayani/releaseme.git"
     },
     "scripts": {
-        "test": "echo 'Hello World'"
+        "lint": "gulp lint",
+        "test": "gulp test"
     },
     "keywords": [
         "release",
