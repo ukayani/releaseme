@@ -2,7 +2,6 @@
 
 'use strict';
 const pkg = require('../package.json');
-const path = require('path');
 const assert = require('assert');
 const program = require('commander');
 const chalk = require('chalk');
@@ -27,20 +26,6 @@ const exitOnFailedPromise = (promise) => promise.catch(err => {
   console.error(chalk.red(err.message));
   process.exit(1);
 });
-
-const getOptions = (options) => {
-  const accessKey = options.accessKeyId;
-  const secretKey = options.secretAccessKey;
-  const region = options.region;
-  const profile = options.profile;
-
-  return {
-    accessKeyId: accessKey,
-    secretAccessKey: secretKey,
-    region,
-    profile
-  };
-};
 
 const createClient = () => {
   return releaseme.create();
