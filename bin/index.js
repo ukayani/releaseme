@@ -53,8 +53,8 @@ const run = (client, program) => {
 
 program
   .version(pkg.version)
-  .option('-c, --current-version <version>', 'The version to release')
-  .option('-n, --next-version <version>', 'The next version for release')
+  .option('-c, --release-version <version>', 'The version to release')
+  .option('-n, --next-version <version>', 'The next version for release (snapshot)')
   .usage('[options] [type]')
   .description('Releases your node module. Use [type] to specify: [major, minor, patch]');
 
