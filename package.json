@@ -17,6 +17,7 @@
     "releaseme": {
         "steps": [
             "checkStatus",
+            "lint",
             "test",
             "setReleaseVersion",
             "commitReleaseVersion",
