@@ -37,8 +37,8 @@ const run = (client, program) => {
 
   const options = {
     type,
-    nextVersion: program.nextVersion,
-    currentVersion: program.currentVersion
+    releaseVersion: program.releaseVersion,
+    nextVersion: program.nextVersion
   };
 
   const validate = () => {
