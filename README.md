@@ -96,4 +96,26 @@ You can then use the name of the script as a step in your release.
 
 The example above adds a script called lint which runs `gulp lint`. We then use this script as a step in our release steps after `checkStatus`
 
+### Custom tag prefix
 
+If you have a convention for prefixing your release tags such as `v0.1.0` you can set a prefix via the `tagPrefix` property on `releaseme`:
+
+**Example package.json with custom tag prefix**
+
+```json
+{
+"name": "my-module",
+...
+"scripts": {
+        "lint": "gulp lint",
+        "test": "gulp test"
+    },
+"releaseme": {
+        "tagPrefix": "v"
+        "steps": [
+            ...
+        ]
+},
+...
+}
+```
